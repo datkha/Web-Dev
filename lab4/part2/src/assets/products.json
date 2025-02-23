@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Iphone 15",
+        "description": "Good",
+        "rating": 5,
+        "imageUrl": "assets/iphone15.png",
+        "kaspiUrl": "https://kaspi.kz/shop/p/apple-iphone-15-128gb-dual-esim-chernyi-121691395/?m=234005&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_100k-500k&gad_source=1&gbraid=0AAAAAC7-v7gOPV4kTu2_K1OtQlZe9--C9&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1Uc8EKxsNmsY9-IGrWRAD3NvhEeJpSDnWTyfPaDHYGLEYxg-hTsC0aAoy2EALw_wcB"
+    },
+    {
+        "name": "Macbook M2 Pro",
+        "description": "Bad",
+        "rating": 5,
+        "imageUrl": "assets/macbook.jpeg",
+        "kaspiUrl": "https://kaspi.kz/shop/p/apple-macbook-pro-14-2023-14-2-16-gb-ssd-512-gb-macos-mphe3-108645925/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_100k-500k&gbraid=0AAAAAC7-v7gOPV4kTu2_K1OtQlZe9--C9&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1Uc8EKxsNmsY9-IGrWRAD3NvhEeJpSDnWTyfPaDHYGLEYxg-hTsC0aAoy2EALw_wcB"
+    },
+    {
+        "name": "Samsung Galaxy S23",
+        "description": "Флагманский смартфон от Samsung",
+        "rating": 4.7,
+        "imageUrl": "assets/galaxy_s23.jpg",
+        "kaspiUrl": "https://kaspi.kz/shop/p/samsung-galaxy-s23-ultra-12-gb-256-gb-chernyi-109174566/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_100k-500k&gbraid=0AAAAAC7-v7gOPV4kTu2_K1OtQlZe9--C9&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1Uc8EKxsNmsY9-IGrWRAD3NvhEeJpSDnWTyfPaDHYGLEYxg-hTsC0aAoy2EALw_wcB"
+    },
+    {
+        "name": "PlayStation 5",
+        "description": "Игровая консоль нового поколения",
+        "rating": 4.9,
+        "imageUrl": "assets/ps5.png",
+        "kaspiUrl": "https://kaspi.kz/shop/p/sony-playstation-5-geimpad-zarjadnaja-stantsija-gripsy-fifa23-ps4-ufc4-mortal-kombat-11-ultimate-gta5-call-of-duty-cold-war-need-for-speed-heat-116749438/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_100k-500k&gbraid=0AAAAAC7-v7gOPV4kTu2_K1OtQlZe9--C9&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1Uc8EKxsNmsY9-IGrWRAD3NvhEeJpSDnWTyfPaDHYGLEYxg-hTsC0aAoy2EALw_wcB"
+    },
+    {
+        "name": "Xiaomi Redmi Note 12",
+        "description": "Отличный бюджетный смартфон",
+        "rating": 4.5,
+        "imageUrl": "assets/xiaomi.jpg",
+        "kaspiUrl": "https://kaspi.kz/shop/p/xiaomi-redmi-note-12-pro-5g-8-gb-256-gb-sinii-podarok-109744675/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_100k-500k&gbraid=0AAAAAC7-v7gOPV4kTu2_K1OtQlZe9--C9&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1Uc8EKxsNmsY9-IGrWRAD3NvhEeJpSDnWTyfPaDHYGLEYxg-hTsC0aAoy2EALw_wcB"
+    },
+    {
+        "name": "Asus ROG Laptop",
+        "description": "Мощный игровой ноутбук",
+        "rating": 4.8,
+        "imageUrl": "assets/asusrog.png",
+        "kaspiUrl": "https://kaspi.kz/shop/p/asus-rog-strix-g15-15-6-16-gb-ssd-512-gb-bez-os-g513rm-hq171-90nr0845-m008r0-104580934/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_100k-500k&gbraid=0AAAAAC7-v7gOPV4kTu2_K1OtQlZe9--C9&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1Uc8EKxsNmsY9-IGrWRAD3NvhEeJpSDnWTyfPaDHYGLEYxg-hTsC0aAoy2EALw_wcB"
+    },
+    {
+        "name": "Apple Watch Series 9",
+        "description": "Новые смарт-часы от Apple",
+        "rating": 4.6,
+        "imageUrl": "assets/apple_watch.jpg",
+        "kaspiUrl": "https://kaspi.kz/shop/p/apple-watch-series-9-gps-s-m-41-mm-sinii-chernyi-113398134/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_100k-500k&gbraid=0AAAAAC7-v7gOPV4kTu2_K1OtQlZe9--C9&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1Uc8EKxsNmsY9-IGrWRAD3NvhEeJpSDnWTyfPaDHYGLEYxg-hTsC0aAoy2EALw_wcB"
+    },
+    {
+        "name": "AirPods Pro 2",
+        "description": "Беспроводные наушники с шумоподавлением",
+        "rating": 4.7,
+        "imageUrl": "assets/airpods_pro2.jpg",
+        "kaspiUrl": "https://kaspi.kz/shop/p/apple-airpods-pro-2-with-type-c-wireless-charging-belyi-113677582/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_100k-500k&gbraid=0AAAAAC7-v7gOPV4kTu2_K1OtQlZe9--C9&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1Uc8EKxsNmsY9-IGrWRAD3NvhEeJpSDnWTyfPaDHYGLEYxg-hTsC0aAoy2EALw_wcB"
+    },
+    {
+        "name": "GoPro Hero 11",
+        "description": "Экшн-камера для съемок в любых условиях",
+        "rating": 4.8,
+        "imageUrl": "assets/gopro.jpg",
+        "kaspiUrl": "https://kaspi.kz/shop/p/ekshn-kamera-gopro-hero-11-black-edition-chdhx-112-rw-115723801/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_100k-500k&gbraid=0AAAAAC7-v7gOPV4kTu2_K1OtQlZe9--C9&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1Uc8EKxsNmsY9-IGrWRAD3NvhEeJpSDnWTyfPaDHYGLEYxg-hTsC0aAoy2EALw_wcB"
+    },
+    {
+        "name": "Nintendo Switch",
+        "description": "Гибридная игровая консоль",
+        "rating": 4.7,
+        "imageUrl": "assets/nintendo.jpg",
+        "kaspiUrl": "https://kaspi.kz/shop/p/nintendo-switch-oled-white-108349876/"
+    }
+]

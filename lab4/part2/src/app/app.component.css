@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-logo {
+    height: 78px;
+}
+
+h3 {
+    color: red;
+    font-size: 34px;
+}

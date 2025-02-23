@@ -1,0 +1,19 @@
+<div class="product-card">
+    <h1 class="product-title">{{ product?.name }}</h1>
+    <img [src]="product?.imageUrl" [alt]="product?.name" class="product-image">
+    <p class="product-description">{{ product?.description }}</p>
+    <p class="product-rating">Rating: ⭐{{ product?.rating }}/5</p>
+    <a [href]="product?.kaspiUrl" target="_blank" class="buy-button">
+        🔗 Купить на Kaspi
+    </a>
+
+    <div class="share-buttons">
+        <a [href]="'https://wa.me/?text=' + (product?.kaspiUrl || '')" target="_blank" class="share-button whatsapp">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp"> Share
+        </a>
+        <a [href]="'https://t.me/share/url?url=' + (product?.kaspiUrl || '')" target="_blank"
+            class="share-button telegram">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"> Share
+        </a>
+    </div>
+</div>
