@@ -4,4 +4,5 @@ export interface Product {
     rating: number;
     imageUrl: string;
     kaspiUrl: string;
+    category: string;
 }

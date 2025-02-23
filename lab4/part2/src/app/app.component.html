@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html>
+<nav>
+  <button (click)="selectedCategory = 'watches'">Watches</button>
+  <button (click)="selectedCategory = 'headphones'">Headphones</button>
+  <button (click)="selectedCategory = 'camera'">Cameras</button>
+  <button (click)="selectedCategory = 'phones'">Phones</button>
+  <button (click)="selectedCategory = 'laptops'">Laptops</button>
+  <button (click)="selectedCategory = 'Gaming_Consoles'">Consoles</button>
+  <button (click)="selectedCategory = ''">All</button>
+</nav>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="">
-</head>
-<header>
-  <img class='header-logo' src="assets/large_logo_square.fw.png">
-  <h3>Kaspi</h3>
-</header>
+<main *ngIf="!isProductPage()">
+  <app-products [selectedCategory]="selectedCategory"></app-products>
+</main>
 
-<body>
-  <router-outlet></router-outlet>
-</body>
-
-</html>
+<router-outlet></router-outlet>
