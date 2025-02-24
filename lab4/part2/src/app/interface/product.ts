@@ -5,4 +5,5 @@ export interface Product {
     imageUrl: string;
     kaspiUrl: string;
     category: string;
+    likes: number;
 }

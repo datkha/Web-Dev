@@ -1,0 +1,12 @@
+<nav>
+    <button (click)="selectedCategory = 'Watches'">Watches</button>
+    <button (click)="selectedCategory = 'headphones'">Headphones</button>
+    <button (click)="selectedCategory = 'Camera'">Cameras</button>
+    <button (click)="selectedCategory = 'Phones'">Phones</button>
+    <button (click)="selectedCategory = 'laptops'">Laptops</button>
+    <button (click)="selectedCategory = 'Gaming_Consoles'">Consoles</button>
+    <button (click)="selectedCategory = ''">All</button>
+    <button (click)="resetProducts()">reset products</button>
+</nav>
+
+<app-products [selectedCategory]="selectedCategory"></app-products>

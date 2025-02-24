@@ -12,16 +12,4 @@ import { ProductsComponent } from './products/products.component';
 })
 export class AppComponent {
   title = 'kaspi';
-  categories: string[] = ['Phones', 'Laptops', 'Gaming_Consoles', 'Watches', 'Headphones', 'Camera'];
-  selectedCategory: string = '';
-
-  constructor(private router: Router) { }
-
-  setCategory(category: string) {
-    this.selectedCategory = category;
-  }
-
-  isProductPage(): boolean {
-    return this.router.url.startsWith('/product/');
-  }
 }

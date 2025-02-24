@@ -1,28 +1,18 @@
-import { Component, Input } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Input, OnChanges } from '@angular/core';
+import { CommonModule, JsonPipe } from '@angular/common';
 import { Product } from '../interface/product';
 import { RouterModule } from '@angular/router';
 import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-products',
-  imports: [CommonModule, RouterModule],
   standalone: true,
+  imports: [CommonModule, RouterModule],
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
-export class ProductsComponent {
-  private _selectedCategory: string = '';
-
-  @Input()
-  set selectedCategory(value: string) {
-    this._selectedCategory = value;
-    this.filterProducts();
-  }
-
-  get selectedCategory(): string {
-    return this._selectedCategory;
-  }
+export class ProductsComponent implements OnChanges {
+  @Input() selectedCategory: string = '';
 
   products: Product[] = [];
   filteredProducts: Product[] = [];
@@ -30,17 +20,32 @@ export class ProductsComponent {
   constructor(private productService: ProductService) { }
 
   ngOnInit() {
-    this.productService.getProducts().subscribe(data => {
-      this.products = data;
-      this.filterProducts();
-    });
+    const savedProducts = localStorage.getItem('products');
+    if (savedProducts) {
+      this.products = JSON.parse(savedProducts);
+    } else {
+      this.productService.getProducts().subscribe(data => {
+        this.products = data;
+        localStorage.setItem('products', JSON.stringify(this.products));
+        this.filterProducts();
+      });
+    }
+    this.filterProducts();
   }
 
+  ngOnChanges() {
+    this.filterProducts();
+  }
+  removeProduct(product: Product) {
+    this.products = this.products.filter(p => p.name !== product.name);
+    this.filterProducts();
+    localStorage.setItem('products', JSON.stringify(this.products));
+  }
+
+
   filterProducts() {
-    if (this.selectedCategory) {
-      this.filteredProducts = this.products.filter(p => p.category === this.selectedCategory);
-    } else {
-      this.filteredProducts = this.products;
-    }
+    this.filteredProducts = this.selectedCategory
+      ? this.products.filter(p => p.category.toLowerCase() === this.selectedCategory.toLowerCase())
+      : this.products;
   }
 }

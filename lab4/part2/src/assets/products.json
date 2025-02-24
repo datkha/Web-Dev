@@ -29,7 +29,7 @@
         "rating": 4.9,
         "imageUrl": "assets/ps5.png",
         "kaspiUrl": "https://kaspi.kz/shop/p/sony-playstation-5-geimpad-zarjadnaja-stantsija-gripsy-fifa23-ps4-ufc4-mortal-kombat-11-ultimate-gta5-call-of-duty-cold-war-need-for-speed-heat-116749438/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_performance_max_100k-500k&gbraid=0AAAAAC7-v7gOPV4kTu2_K1OtQlZe9--C9&gclid=Cj0KCQiAq-u9BhCjARIsANLj-s1Uc8EKxsNmsY9-IGrWRAD3NvhEeJpSDnWTyfPaDHYGLEYxg-hTsC0aAoy2EALw_wcB",
-        "category": "Gaming Consoles"
+        "category": "Gaming_Consoles"
     },
     {
         "name": "Xiaomi Redmi Note 12",
@@ -77,6 +77,6 @@
         "rating": 4.7,
         "imageUrl": "assets/nintendo.jpg",
         "kaspiUrl": "https://kaspi.kz/shop/p/nintendo-switch-oled-white-108349876/",
-        "category": "Gaming Consoles"
+        "category": "Gaming_Consoles"
     }
 ]
