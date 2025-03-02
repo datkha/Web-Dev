@@ -6,4 +6,5 @@ export interface Product {
     kaspiUrl: string;
     category: string;
     likes: number;
+    liked?: boolean;
 }

@@ -15,7 +15,6 @@ export class HomeComponent {
   @ViewChild("productComp") productsComponent!: ProductsComponent;
   resetProducts() {
     localStorage.removeItem('products');
-    this.productsComponent.products = [];
   }
 
   constructor(private router: Router) { }

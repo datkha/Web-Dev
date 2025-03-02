@@ -3,8 +3,9 @@
     <img [src]="product?.imageUrl" [alt]="product?.name" class="product-image">
     <p class="product-description">{{ product?.description }}</p>
     <p class="product-rating">Rating: ⭐{{ product?.rating }}/5</p>
-    <p class="product-likes">Likes : {{product?.likes}}</p>
-    <button (click)="likeProduct()">Like</button>
+    <button (click)="likeProduct()">
+        {{ product?.liked ? 'unlike' : 'like' }}
+    </button>
     <a [href]="product?.kaspiUrl" target="_blank" class="buy-button">
         🔗 Купить на Kaspi
     </a>

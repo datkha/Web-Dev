@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges } from '@angular/core';
 import { CommonModule, JsonPipe } from '@angular/common';
 import { Product } from '../interface/product';
 import { RouterModule } from '@angular/router';
@@ -13,7 +13,6 @@ import { ProductService } from '../services/product.service';
 })
 export class ProductsComponent implements OnChanges {
   @Input() selectedCategory: string = '';
-
   products: Product[] = [];
   filteredProducts: Product[] = [];
 
@@ -44,8 +43,12 @@ export class ProductsComponent implements OnChanges {
 
 
   filterProducts() {
-    this.filteredProducts = this.selectedCategory
-      ? this.products.filter(p => p.category.toLowerCase() === this.selectedCategory.toLowerCase())
-      : this.products;
+    if (this.selectedCategory === 'Лайкнутое') {
+      this.filteredProducts = this.products.filter(p => p.liked);
+    } else {
+      this.filteredProducts = this.selectedCategory
+        ? this.products.filter(p => p.category.toLowerCase() === this.selectedCategory.toLowerCase())
+        : this.products;
+    }
   }
 }

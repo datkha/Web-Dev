@@ -18,13 +18,21 @@ export class ProductDetailsComponent {
   constructor(private route: ActivatedRoute, private productService: ProductService) { }
   likeProduct() {
     if (this.product) {
-      this.product.likes += 1;
+      this.product.liked = !this.product.liked;
+      this.product.likes += this.product.liked ? 1 : -1;
+      
+
+      const savedProducts = JSON.parse(localStorage.getItem('products') || '[]');
+      const updatedProducts = savedProducts.map((p: Product) =>
+        p.name === this.product?.name ? this.product : p
+      );
+
+      localStorage.setItem('products', JSON.stringify(updatedProducts));
     }
   }
 
   ngOnInit() {
     this.productId = this.route.snapshot.paramMap.get('id');
-
     this.productService.getProducts().subscribe(products => {
       this.product = products.find(p => p.name.toLowerCase() === this.productId?.toLowerCase());
       if (this.product && this.product.likes === undefined) {
