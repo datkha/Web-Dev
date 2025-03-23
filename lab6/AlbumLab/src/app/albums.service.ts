@@ -8,10 +8,9 @@ export class AlbumsService {
 
   constructor(private http: HttpClient) { }
 
-  getAlbums(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl);
+  getAlbums(): Observable<any> {
+    return this.http.get<any[]>(`${this.apiUrl}`)
   }
-
   getAlbum(id: number): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/${id}`);
   }
@@ -23,4 +22,12 @@ export class AlbumsService {
   deleteAlbum(id: number): Observable<any> {
     return this.http.delete<any>(`${this.apiUrl}/${id}`);
   }
+
+  getPhotos(id: number): Observable<any[]> {
+    return this.http.get<any[]>(
+      `${this.apiUrl}/${id}/photos`
+    );
+  }
+
+
 }

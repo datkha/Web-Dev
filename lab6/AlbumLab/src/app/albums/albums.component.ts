@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Router, RouterModule,RouterLink } from '@angular/router';
 import { AlbumsService } from '../albums.service';
-import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-albums',
+  standalone: true,
+  imports: [CommonModule, RouterModule,RouterLink],
   templateUrl: './albums.component.html',
   styleUrls: ['./albums.component.css']
 })
@@ -18,13 +21,10 @@ export class AlbumsComponent implements OnInit {
     });
   }
 
-  deleteAlbum(id: number): void {
+  deleteAlbum(id: number): void{
     this.albumsService.deleteAlbum(id).subscribe(() => {
       this.albums = this.albums.filter(album => album.id !== id);
-    });
+    })
   }
-
-  viewAlbum(id: number): void {
-    this.router.navigate([`/albums/${id}`]);
-  }
+  
 }
