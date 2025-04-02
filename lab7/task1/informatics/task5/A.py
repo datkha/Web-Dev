@@ -1,6 +1,9 @@
-def min(a, b, c, d):
-    return min(a, b, c, d)
+n = int(input())
+a = []
 
-a, b, c, d = map(int, input().split())
+for i in range(n):
+    x = int(input())
+    a.append(x)
 
-print(min(a, b, c, d))
+for i in range(0, n, 2):
+    print(a[i])

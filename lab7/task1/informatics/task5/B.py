@@ -1,7 +1,6 @@
-def power(a, n):
-    return a ** n
-
-a = float(input())
 n = int(input())
+a = list(map(int, input().split()))
 
-print(power(a, n))
+for i in a:
+    if i % 2 == 0:
+        print(i, end=' ')

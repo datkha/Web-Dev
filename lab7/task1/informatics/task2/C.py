@@ -1,13 +1,7 @@
-system_answer = int(input())  
-student_answer = int(input())  
+a = int(input())
+b = int(input())
 
-if system_answer == 1:
-    if student_answer == 1:
-        print("YES")
-    else:
-        print("NO")
+if a == b or (a != 1 and b != 1):
+    print("YES")
 else:
-    if student_answer != 1:
-        print("YES")
-    else:
-        print("NO")
+    print("NO")

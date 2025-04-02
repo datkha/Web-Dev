@@ -1,7 +1,9 @@
-N = int(input())
-
-array = list(map(int, input().split()))
-
-for number in array:
-    if number % 2 == 0:
-        print(number, end=" ")
+a = int(input())
+i = 2
+while(True):
+    if a%i == 0:
+        print(i)
+        break
+    else:
+        i += 1
+        

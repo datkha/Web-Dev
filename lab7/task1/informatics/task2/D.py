@@ -1,8 +1,7 @@
-x = int(input())
-
-if x > 0:
+a = int(input())
+if a > 0:
     print(1)
-elif x < 0:
+elif a < 0:
     print(-1)
-elif x == 0:
+else:
     print(0)

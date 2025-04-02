@@ -1,4 +1,3 @@
-n = int(input())
-k = int(input())
-
-print((k%n))
+a = int(input())
+b = int(input())
+print(b%a)

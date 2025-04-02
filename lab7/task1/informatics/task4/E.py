@@ -1,11 +1,9 @@
-N = int(input())
+n = int(input())
+k = 0
+power_of_2 = 1
 
-array = list(map(int, input().split()))
+while power_of_2 < n:
+    power_of_2 *= 2
+    k += 1
 
-result = "NO"
-for i in range(N - 1):
-    if (array[i] > 0 and array[i + 1] > 0) or (array[i] < 0 and array[i + 1] < 0):
-        result = "YES"
-        break
-
-print(result)
+print(k)
