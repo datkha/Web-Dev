@@ -1,9 +1,8 @@
 from django.shortcuts import render
-from .models import Category, Product
 from django.http import JsonResponse
+from .models import Product, Category
 
-# Create your views here.
-def ProductsList(request):
+def list_products(request):
     products = Product.objects.all()
     data = []
     for product in products:
@@ -14,12 +13,11 @@ def ProductsList(request):
             'description': product.description,
             'count': product.count,
             'is_active': product.is_active,
-            'category': product.category.id
+            'category': product.category.name
         })
-        
     return JsonResponse(data, safe=False)
 
-def ProductsDetails(request, id):
+def get_product(request, id):
     product = Product.objects.get(id=id)
     data = {
         'id': product.id,
@@ -28,45 +26,40 @@ def ProductsDetails(request, id):
         'description': product.description,
         'count': product.count,
         'is_active': product.is_active,
-        'category': product.category.id
+        'category': product.category.name
     }
-    
     return JsonResponse(data)
 
-def CategoriesList(request):
+def list_categories(request):
     categories = Category.objects.all()
     data = []
     for category in categories:
         data.append({
             'id': category.id,
-            'name': category.name
+            'name': category.name,
         })
-        
     return JsonResponse(data, safe=False)
 
-def CategoryDetails(request, id):
-    category = Category.objects.get(id=id)
+def get_category(request, id):
+    category = Category.objects.get(id = id)
     data = {
         'id': category.id,
         'name': category.name
     }
-    
     return JsonResponse(data)
 
-def CategoryProductsList(request,id):
+def category_products(request,id):
     category = Category.objects.get(id=id)
     products = Product.objects.filter(category=category)
     data = []
-    
     for product in products:
         data.append({
             'id': product.id,
-            'name': product.name,
+            'name':product.name,
             'price': product.price,
             'description': product.description,
             'count': product.count,
-            'is_active': product.is_active
+            'is_active': product.is_active,
+            'category': product.category.name
         })
-        
-    return JsonResponse(data, safe=False)
-    
+    return JsonResponse(data,safe=False)
